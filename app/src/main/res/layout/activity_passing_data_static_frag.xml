@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PassingDataStaticFrag">
+
+    <fragment
+        android:id="@+id/fragmentOne"
+        android:name="com.ansari.manfragproj.Fragment_One"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginBottom="76dp"
+        android:layout_marginTop="26dp"
+        app:layout_constraintBottom_toTopOf="@+id/fragmentTwo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <fragment
+        android:id="@+id/fragmentTwo"
+        android:name="com.ansari.manfragproj.Fragment_Two"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginBottom="9dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fragmentOne" />
+</android.support.constraint.ConstraintLayout>
